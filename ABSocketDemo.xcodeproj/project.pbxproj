@@ -13,6 +13,7 @@
 		2B1B57851EE5494E00FD352F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1B57831EE5494E00FD352F /* Main.storyboard */; };
 		2B1B57871EE5494E00FD352F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B1B57861EE5494E00FD352F /* Assets.xcassets */; };
 		2B1B578A1EE5494E00FD352F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1B57881EE5494E00FD352F /* LaunchScreen.storyboard */; };
+		2B1B57941EE5498200FD352F /* ABSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1B57931EE5498200FD352F /* ABSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		2B1B57861EE5494E00FD352F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B1B57891EE5494E00FD352F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B1B578B1EE5494E00FD352F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B1B57921EE5498200FD352F /* ABSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABSocket.h; sourceTree = "<group>"; };
+		2B1B57931EE5498200FD352F /* ABSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		2B1B57791EE5494D00FD352F /* ABSocketDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2B1B57911EE5498200FD352F /* ABSocket */,
 				2B1B577D1EE5494D00FD352F /* AppDelegate.h */,
 				2B1B577E1EE5494E00FD352F /* AppDelegate.m */,
 				2B1B57801EE5494E00FD352F /* ViewController.h */,
@@ -77,6 +81,15 @@
 				2B1B577B1EE5494D00FD352F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2B1B57911EE5498200FD352F /* ABSocket */ = {
+			isa = PBXGroup;
+			children = (
+				2B1B57921EE5498200FD352F /* ABSocket.h */,
+				2B1B57931EE5498200FD352F /* ABSocket.m */,
+			);
+			path = ABSocket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +123,7 @@
 				TargetAttributes = {
 					2B1B57761EE5494D00FD352F = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 22BC5D5294;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -151,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B1B57821EE5494E00FD352F /* ViewController.m in Sources */,
+				2B1B57941EE5498200FD352F /* ABSocket.m in Sources */,
 				2B1B577F1EE5494E00FD352F /* AppDelegate.m in Sources */,
 				2B1B577C1EE5494D00FD352F /* main.m in Sources */,
 			);
@@ -274,7 +289,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 22BC5D5294;
 				INFOPLIST_FILE = ABSocketDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aabl.ABSocketDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -285,7 +302,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 22BC5D5294;
 				INFOPLIST_FILE = ABSocketDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aabl.ABSocketDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
